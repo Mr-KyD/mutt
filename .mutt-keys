@@ -1,0 +1,28 @@
+# == Configuracion de Accesos Rapidos ==
+macro 	index 	gi "<change-folder>=Inbox<enter>" "Ir al Inbox"
+macro 	index 	gl "<change-folder>=Logwatch<enter>" "Ir a Logwatch"
+macro 	index 	gu "<change-folder>=Actualizaciones<enter>" "Ir a Actualizaciones"
+macro 	index 	gs "<change-folder>=Enviados<enter>" "Ir a Enviados"
+macro 	index 	gb "<change-folder>=Borradores<enter>" "Ir a Borradores"
+macro 	index 	gp "<change-folder>=Papelera<enter>" "Ir a Papelera"
+macro    index   	M  "T.*\n;WN" "Mark all messages as read"
+macro  	index 	eC	"!$EDITOR ~/.mutt/lumac/.muttrc\n:source ~/.mutt/lumac/.muttrc\n" "Edit config file and reload it"
+macro  	index 	ec	"!$EDITOR ~/.mutt/lumac/.mutt-colors\n:source ~/.mutt/lumac/.mutt-colors\n" "Edit color file and reload it"
+macro  	index 	ek	"!$EDITOR ~/.mutt/lumac/.mutt-keys\n:source ~/.mutt/lumac/.mutt-keys\n" "Edit keys file and reload it"
+macro  	index 	eo	"!$EDITOR ~/.mutt/lumac/.mutt-options\n:source ~/.mutt/lumac/.mutt-options\n" "Edit options file and reload it"
+
+# == Configuracion de Accesos Generic ==
+bind 	generic g 	first-entry
+bind 	generic G 	last-entry
+
+# == Configuracion de Accesos Index ==
+bind 	index S 	search
+bind	index	-	sidebar-next
+bind	index	+	sidebar-prev
+
+# == Configuracion de Accesos Pager ==
+bind	pager	<up>		previous-line
+bind	pager	<down>	next-line
+bind	pager	<left>	previous-entry
+bind	pager	<right>	next-entry
+bind  pager	S			search
