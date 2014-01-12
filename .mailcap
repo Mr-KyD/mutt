@@ -1,0 +1,6 @@
+text/html ; lynx -dump -force_html %s ; copiousoutput
+text/htm ; lynx -dump -force_html %s ; copiousoutput
+message/html ; lynx -dump -force_html %s ; copiousoutput
+message/htm ; lynx -dump -force_html %s ; copiousoutput
+image/* ; gpicview %s > /dev/null ; copiousoutput
+application/pdf; pdftotext %s -; copiousoutput
