@@ -1,0 +1,41 @@
+# == Definicion de Colores ==
+
+#INDEX
+
+color 	normal 	brightblack		default
+color 	index 	brightcyan	 	default "~Q"
+color 	index 	brightyellow 	default "~N"
+color 	index 	brightyellow 	default "~O"
+color 	index		cyan				default "~p"
+color    index 	brightred		default "~D"
+#color 	index    brightcyan   	default '~f (nerdos@nerdos.com.ar)'
+
+
+#HEADER
+
+color 	header brightred  default "From: "
+color 	header brightcyan default "To: "
+color 	header brightcyan default "Reply-To: "
+color 	header brightcyan default "Cc: "
+color 	header brightred 	default "Subject: "
+
+#SIDEBAR
+color		sidebar_new	brightyellow 	default
+
+# BODY
+color 	body 	green	default	"[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+color 	body	green	default	"(http|https|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+color		body	green default	 "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+
+#MISC
+
+color 	markers 		brightred 		black
+color 	status 		brightgreen 	blue
+color 	search  		yellow 			default
+color 	message 		brightyellow 	default
+color 	indicator 	white 			black
+color 	tree 			red 				default
+color 	hdrdefault 	cyan 				default
+color 	attachment 	green				default
+color		signature	brightred		default
+color 	quoted 		magenta			default
