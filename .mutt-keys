@@ -6,10 +6,10 @@ macro 	index 	gs "<change-folder>=Enviados<enter>" "Ir a Enviados"
 macro 	index 	gb "<change-folder>=Borradores<enter>" "Ir a Borradores"
 macro 	index 	gp "<change-folder>=Papelera<enter>" "Ir a Papelera"
 macro    index   	M  "T.*\n;WN" "Mark all messages as read"
-macro  	index 	eC	"!$EDITOR ~/.mutt/lumac/.muttrc\n:source ~/.mutt/lumac/.muttrc\n" "Edit config file and reload it"
-macro  	index 	ec	"!$EDITOR ~/.mutt/lumac/.mutt-colors\n:source ~/.mutt/lumac/.mutt-colors\n" "Edit color file and reload it"
-macro  	index 	ek	"!$EDITOR ~/.mutt/lumac/.mutt-keys\n:source ~/.mutt/lumac/.mutt-keys\n" "Edit keys file and reload it"
-macro  	index 	eo	"!$EDITOR ~/.mutt/lumac/.mutt-options\n:source ~/.mutt/lumac/.mutt-options\n" "Edit options file and reload it"
+macro  	index 	eC	"!$EDITOR ~/.mutt/correo/.muttrc\n:source ~/.mutt/correo/.muttrc\n" "Edit config file and reload it"
+macro  	index 	ec	"!$EDITOR ~/.mutt/correo/.mutt-colors\n:source ~/.mutt/correo/.mutt-colors\n" "Edit color file and reload it"
+macro  	index 	ek	"!$EDITOR ~/.mutt/correo/.mutt-keys\n:source ~/.mutt/correo/.mutt-keys\n" "Edit keys file and reload it"
+macro  	index 	eo	"!$EDITOR ~/.mutt/correo/.mutt-options\n:source ~/.mutt/correo/.mutt-options\n" "Edit options file and reload it"
 
 # == Configuracion de Accesos Generic ==
 bind 	generic g 	first-entry
