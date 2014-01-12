@@ -1,0 +1,67 @@
+##################################
+##  Configuracion de la Cuenta  ##
+##################################
+# Datos del User
+set from=""
+set realname=""
+#
+# Usuario.
+set imap_user="user"
+#
+## Especificar el Servidor IMAP.
+set spoolfile=imaps://imap.mail.com.ar:993/Inbox
+#
+###################
+##  Directorios  ## 
+###################
+# Directorio.
+set folder=imaps://imap.mail.com.ar
+#
+# Directorios Imap a ser revisados.
+mailboxes =Inbox =Borradores =Enviados =Papelera 
+#
+# Almacenar las cabeceras de mensajes localmente para acelerar las cosas.
+set header_cache=~/.mutt/correo/hcache
+#
+# Donde guardar o buscar los mensajes pospuestos.
+set postponed=+Borradores
+#
+# Donde guardar o buscar los mensajes enviados.
+set record=+Enviados
+# 
+# Donde se guarda la Firma.
+set signature=~/.mutt/correo/.signature
+#
+# Envio
+set smtp_url=smtp://user@smtp.mail.com.ar/
+
+################################
+##  Preferencias de Opciones  ##
+################################
+source ~/.mutt/correo/.mutt-options
+#
+###############################
+##  Preferencias de Colores  ##
+###############################
+source ~/.mutt/correo/.mutt-colors
+#
+###############################
+##  Preferencias de Sidebar  ##
+###############################
+source ~/.mutt/correo/.mutt-sidebar
+#
+################################
+##  Preferencias de las Keys  ##
+################################
+source ~/.mutt/correo/.mutt-keys
+#
+################################
+##  Preferencias de Alias     ##
+################################
+source ~/.mutt/correo/.mutt-alias
+#
+################################
+##  Preferencias de Alias     ##
+################################
+source ~/.mutt/correo/.mutt-gpg
+#
