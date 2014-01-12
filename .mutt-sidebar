@@ -1,0 +1,14 @@
+# == Sidebar ==
+set sidebar_width="25"
+set sidebar_visible="yes"
+
+# ==  Sidebar Color ==
+color sidebar_new yellow black
+
+# == Sidebar Keys ==
+bind 	index 	+ sidebar-prev
+bind 	index 	- sidebar-next
+bind 	index 	. sidebar-open
+
+macro 	index 	b '<enter-command>toggle sidebar_visible<enter>'
+macro 	pager 	b '<enter-command>toggle sidebar_visible<enter>'
