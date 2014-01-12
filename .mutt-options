@@ -1,0 +1,89 @@
+# Permitir a mutt abrir nuevas conexiones imap automaticamente
+set imap_passive = no
+#
+# Mantener viva la conexion imap preguntando intermitentemente (tiempo en segundos)
+set imap_keepalive = 300
+#
+# Cada cuanto se revisa si hay correo. (Segundos)
+set mail_check = 120
+#
+#No mover los mensajes al Salir.
+set move=no
+#
+# Incluir el mensaje recibido al responder.
+set include=yes
+#
+# Desplegar por linea , no por pagina.
+set menu_scroll=yes
+#
+# Editor
+set editor="vim"
+#
+# Beep
+set beep=yes
+set beep_new=yes
+#
+# Scrolling Menu
+set menu_scroll
+#
+# Printer Validator
+set print=ask-yes
+#
+# Mailer
+set sendmail=/usr/bin/mail
+#
+# Confirmacion de salida
+set quit=ask-yes
+#
+# Certificados
+set certificate_file="~/.mutt/lumac/.certificates"
+#
+# Headers
+ignore *
+unignore from: reply-to mail-followup-to to cc bcc subject date x-mailer user-agent X-Originating-IP
+#
+# Headers Order
+hdr_order Date: From: To: Cc: Subject: X-mailer: X-Originating-IP: 
+#
+# Impresion
+set print_command = "muttprint"
+#
+# Pager
+set pager_index_lines=10
+#
+# Sorting
+set sort=Threads
+set sort_aux=reverse-date-received
+#
+# No poner un + en las lineas cortadas
+set markers=no
+#
+# Mailcap
+set mailcap_path=~/.mutt/lumac/.mailcap
+#
+# Poner un - antes de la firma
+set sig_dashes=no
+#set maildir_trash=yes
+#
+# No marcar los mensajes nuevos no leidos en otros accesos como viejos
+set nomark_old
+#
+# Contenido a Ver
+#auto_view application/x-gunzip
+#auto_view application/x-gzip
+#auto_view application/zip
+#auto_view application/pgp-signature
+#auto_view application/pgp
+auto_view application/html
+auto_view application/htm
+auto_view text/html
+auto_view text/htm
+#auto_view image/*
+#
+# Preguntar por el asunto si no se ha rellenado
+set abort_nosubject=ask-yes
+# Al responder a un grupo no incluir mi dirección en los destinatarios
+unset metoo
+
+# Index Format
+set index_format="%4C %Z %{%d %b} [%-40.40a] (%4c) %s"
